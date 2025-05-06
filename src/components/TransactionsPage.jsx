@@ -38,10 +38,6 @@ export default function TransactionsPage() {
     setTx({ name: "", type: "", date: "", amount: "", comment: "" });
   };
 
-  const handleFinanceAISubmit = () => {
-    console.log("Finance AI Insights Requested.");
-  };
-
   return (
     <Box sx={{ maxWidth: 800, mx: "auto", p: 2 }}>
       <Paper elevation={8} sx={{ p: 3, mb: 4 }}>
@@ -93,16 +89,6 @@ export default function TransactionsPage() {
         sx={{ mb: 2 }}
       >
         <Typography variant="h5">Recent Transactions</Typography>
-        <Button
-          variant="contained"
-          onClick={handleFinanceAISubmit}
-          sx={{
-            backgroundColor: "black",
-            "&:hover": { backgroundColor: "#333" },
-          }}
-        >
-          Get Insights With Finance AI
-        </Button>
       </Stack>
 
       <TableContainer component={Paper}>
